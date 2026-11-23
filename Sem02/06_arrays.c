@@ -8,7 +8,7 @@ void ChangeArray(int* array) {
 }
 
 int main() {
-    int array[3] = {1, 2, 3};
+    int array[3] = {};
 
     for (int i = 0; i < 3; ++i) {
         printf("%d\n", array[i]);
@@ -16,23 +16,23 @@ int main() {
 
     printf("Array size: %ld\n", sizeof(array) / sizeof(array[100000]));
 
-//    int* parray = array;
-//
-//    for (int i = 0; i < 3; ++i) {
-//        printf("%d\n", parray[i]);
-//    }
-//
-//    printf("PArray size: %ld\n", sizeof(parray));
-//
-//
-//    ChangeArray(array);
-//
-//    for (int i = 0; i < 3; ++i) {
-//        printf("%d\n", array[i]);
-//    }
-//
-//    int array2[] = {1000, 993, 986};
-//    for (int i = 0; i < 3; ++i) {
-//        printf("%d\n", array[3 + i]);
-//    }
+    int* parray = array;
+
+    for (int i = 0; i < 3; ++i) {
+        printf("%d\n", parray[i]);
+    }
+
+    printf("PArray size: %ld\n", sizeof(parray));
+
+
+    ChangeArray(array);
+
+    for (int i = 0; i < 5; ++i) {
+        printf("%d\n", array[i]);
+    }
+
+    int array2[] = {1000, 993, 986};
+    for (int i = 0; i < 3; ++i) {
+        printf("%d\n", array[3 + i]);
+    }
 }

@@ -9,6 +9,7 @@ int main() {
     char str[] = "hello world";
 
     printf("Char: %c\n", c);
+    printf("Char:\n");
     printf("(int)Char: %d\n", c);     
     printf("Int: %d\n", i);    
     printf("Hex: %x\n", i);   
